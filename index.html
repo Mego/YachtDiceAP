@@ -19,7 +19,7 @@
             overflow-y: auto;
             transition: background-image 2s ease;
 
-            background-image: url('Images/PatternStill.svg');
+            background-image: url('https://yacht-dice-ap.netlify.app/Images/PatternStill.svg');
             background-repeat: repeat;
             background-size: auto; /* or cover/contain as needed */
             font-family: Arial, sans-serif;
@@ -894,7 +894,7 @@
         <div class="tutoroll_container">
             <div class="header-and-button">
                 <!-- <h1 class="tutoroll_header">Yacht Dice</h1> -->
-                <img src="Images/LogoSuperStill.svg" alt="Logo" style="max-height: 300px;">
+                <img src="https://yacht-dice-ap.netlify.app/Images/LogoSuperStill.svg" alt="Logo" style="max-height: 300px;">
 
             </div>
 
@@ -980,7 +980,7 @@
             I'm not planning to do this again :3
         </span>
         <br> <br>
-        <img style="max-width: 10%; max-height: 10%;" src="Images/yachty.png" alt="Boat Image">
+        <img style="max-width: 10%; max-height: 10%;" src="https://yacht-dice-ap.netlify.app/Images/yachty.png" alt="Boat Image">
     </div>
 
 
@@ -1216,11 +1216,11 @@
                         <br><br>
                         <div id="musicplayerdiv">
                             <audio id="boatSound">
-                                <source src="Sounds/boat.mp3" type="audio/mpeg">
+                                <source src="https://yacht-dice-ap.netlify.app/Sounds/boat.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <audio id="newItemSound">
-                                <source src="Sounds/dicethrownewitem.mp3" type="audio/mpeg">
+                                <source src="https://yacht-dice-ap.netlify.app/Sounds/dicethrownewitem.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <div id="customControls"
@@ -1281,7 +1281,7 @@
                     </div>
                 </div>
                 <audio id="achievementSound">
-                    <source src="Sounds/achievement.mp3" type="audio/mpeg">
+                    <source src="https://yacht-dice-ap.netlify.app/Sounds/achievement.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
 
@@ -1436,7 +1436,7 @@
             </div>
         </div>
     </div>
-    <img id="boatImage" src="Images/yachty.png" alt="Boat Image">
+    <img id="boatImage" src="https://yacht-dice-ap.netlify.app/Images/yachty.png" alt="Boat Image">
 
 
     <script>
@@ -1472,23 +1472,23 @@
         }
 
         if(r < 0.001953125){
-            boatImage.src = "Images/boat.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boat.png";
         }else if(r < 0.021953125){
-            boatImage.src = "Images/JaxFlint.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/JaxFlint.png";
         }else if (r < 0.03){
-            boatImage.src = "Images/boaty_down.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty_down.png";
         }else if (r < 0.05){
-            boatImage.src = "Images/boaty_back.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty_back.png";
         }else if (r < 0.09){
-            boatImage.src = "Images/boaty.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty.png";
         }else if (r < 0.12){
-            boatImage.src = "Images/chrisboat.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/chrisboat.png";
         } else if (r< 0.13){
-            boatImage.src = "Images/yachtychristmas.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/yachtychristmas.png";
         } else if (r< 0.48){
-            boatImage.src = "Images/YachtTank.webp";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/YachtTank.webp";
         } else {
-            boatImage.src = "Images/yachty.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/yachty.png";
         }
         
     </script>
@@ -1652,15 +1652,15 @@
         var playPauseButton = document.getElementById('playPauseButton');
         var currentTrackIndex = 0;
         var tracks = [
-            "Sounds/Dreams Interlace.mp3",
-            "Sounds/Interlude.mp3",
-            "Sounds/Yacht Dice.mp3",
-            "Sounds/Into The Waves.mp3",
-            "Sounds/Rolling Ambience.mp3",
-            "Sounds/In Your Eyes.mp3",
-            "Sounds/Lucky.mp3",
-            "Sounds/Final Game.mp3",
-            "Sounds/Full House.mp3"
+            "https://yacht-dice-ap.netlify.app/Sounds/Dreams Interlace.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Interlude.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Yacht Dice.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Into The Waves.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Rolling Ambience.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/In Your Eyes.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Lucky.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Final Game.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Full House.mp3"
             // Add more tracks here as needed
         ];
 
@@ -3172,7 +3172,7 @@
             keydownListeners[i] = handleKeydown;
 
             let rollSound = document.createElement("audio");
-            rollSound.src = "Sounds/rollsound.mp3"; // Set the source of the roll sound
+            rollSound.src = "https://yacht-dice-ap.netlify.app/Sounds/rollsound.mp3"; // Set the source of the roll sound
             rollSound.id = `rollSound${i}`; // Set an ID for the roll sound
             rollSound.volume = document.getElementById("soundEffectVolume").value
 
@@ -6103,7 +6103,7 @@
 
         function resetBackground() {
             // Remove background image from the body
-            document.body.style.backgroundImage = 'url("Images/PatternStill.svg")';
+            document.body.style.backgroundImage = 'url("https://yacht-dice-ap.netlify.app/Images/PatternStill.svg")';
 
             // Reset background image properties (if they were set previously)
             document.body.style.backgroundRepeat = 'initial';
@@ -6180,3 +6180,4 @@
 
 
 </html>
+
