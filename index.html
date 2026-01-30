@@ -1704,7 +1704,7 @@
         function showAchievementDisplay(description, image) {
             const achievementDisplay = document.createElement('div');
             achievementDisplay.classList.add('achievement-display');
-            achievementDisplay.innerHTML = `<img src="${image}" alt="Achievement"><span>${description}</span>`;
+            achievementDisplay.innerHTML = `<img src="https://yacht-dice-ap.netlify.app/${image}" alt="Achievement"><span>${description}</span>`;
             document.body.appendChild(achievementDisplay);
 
             setTimeout(() => {
@@ -2073,7 +2073,7 @@
                             const imageUrl = faces[i]; // Get the image URL at the current index
 
                             const img = document.createElement("img");
-                            img.src = imageUrl;
+                            img.src = `https://yacht-dice-ap.netlify.app/${imageUrl}`;
                             img.classList.add("preview-image");
                             imageContainer.appendChild(img);
                         }
@@ -2098,7 +2098,7 @@
                         const imageUrl = diceFaces[Math.min(i, diceFaces.length - 1)][4 + 2 * i]; // Get the image URL at the current index
 
                         const img = document.createElement("img");
-                        img.src = imageUrl;
+                        img.src = `https://yacht-dice-ap.netlify.app/${imageUrl}`;
                         img.classList.add("preview-image");
                         imageContainer.appendChild(img);
                     }
@@ -6180,5 +6180,6 @@
 
 
 </html>
+
 
 
